@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0E0E06;
+  --primary-color: #0e0e06;
   --cta-color: #0f3cbf;
 }
 
@@ -11,17 +11,20 @@ body {
   font-size: 0.7em;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.3rem;
   font-weight: bold;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -136,15 +139,15 @@ ul {
   width: 170%;
   z-index: 1;
   position: absolute;
-  top: -.7em;
+  top: -0.7em;
   left: -1em;
 }
 
 .navbar .container .drop-down-menu:hover .drop-down li {
   list-style: none;
   border-bottom: 1px solid white;
-  padding: 0 1em .5em 1em;
-  margin: .2em;
+  padding: 0 1em 0.5em 1em;
+  margin: 0.2em;
 }
 
 .navbar .container .drop-down-menu:hover .drop-down li:last-of-type {
@@ -193,7 +196,7 @@ ul {
 }
 
 .slider .container .left-col h1 {
-  margin: .4em 0;
+  margin: 0.4em 0;
   color: white;
 }
 
@@ -238,7 +241,7 @@ ul {
 }
 
 .products .carousel-one li {
-  margin-right: .8em;
+  margin-right: 0.8em;
   text-align: left;
 }
 
@@ -575,37 +578,77 @@ ul {
 }
 
 .blog {
-  border: solid red 2px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .blog .container {
   padding: 3em 5em;
   overflow: hidden;
+  white-space: nowrap;
+}
+
+.blog #slider-controls {
+  padding-top: 5em;
+  position: relative;
+  text-align: initial;
+}
+
+.blog #slider-controls #prev,
+.blog #slider-controls #next {
+  position: absolute;
+  bottom: 15rem;
+}
+
+.blog #slider-controls #next {
+  right: 0;
 }
 
 #slider-wrapper {
-  height: 215px;
-  width: 3000;
+  width: 868px;
+  height: 430px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 
 #slider-wrapper ul {
   position: absolute;
+  width: 4340px;
   top: 0;
   left: 0;
+  -webkit-transition: left 700ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: left 700ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #slider-wrapper ul li {
-  position: relative;
-  width: 434px;
-  height: 215px;
   background-size: cover;
+  width: 868px;
+  height: 430px;
   background-image: url(../images/blog.png);
   float: left;
+  text-align: initial;
+  position: relative;
 }
 
-#slider-wrapper .content {
+#slider-wrapper ul li .primary-cta {
   position: absolute;
+  left: 5em;
+  top: 3em;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+}
+
+#slider-wrapper ul li .h3 {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  width: 20em;
+}
+
+#slider-wrapper ul .content {
+  height: 430px;
 }
 /*# sourceMappingURL=slava.css.map */

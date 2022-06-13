@@ -1,9 +1,9 @@
 {
   "folders": [
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "..\\10b_React_course_2"
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "11b_BigWall_decor_bootstrap"
   }

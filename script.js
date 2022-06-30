@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
 
   next.addEventListener("click", (event) => {
     event.preventDefault();
-    counter++;
+    counter = counter + 1;
 
     if (counter === slideCount) {
       document.getElementById("slider-wrapper").appendChild(createSlides());
